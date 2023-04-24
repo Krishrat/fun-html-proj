@@ -3,7 +3,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hui hui</title>
 <style>
-p {
+div {
 text-align: center;
 font-size: 32px;
 font-family: Candara, Oswald;
@@ -11,40 +11,43 @@ font-family: Candara, Oswald;
 img {
 display: block;
 margin: 0 auto;
-width: 25%;
+width: 80%;
 }
 </style>
 </head>
-<body>
-<p>Can we hang out soon?</p>
-<img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
-</body>
+
+
+
 <title>Batao</title>
 <style>
 #batao1 {
-position: absolute;
-top: 70%;
+position: fixed;
 left: 55%;
-transform: translate(-50%, -50%);
+
 }
 #batao2 {
-position: absolute;
- left: 39%;
-  top: 68%;
+position: fixed;
+ left: 20%;
 }
 </style>
 </head>
 <body>
+  <div>Can we hang out soon?</div>
+  <br><br>
+<div><img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif"></div>
+<br><br>
+<div>
 <button id="batao1">YES BBY!</button>
 <button id="batao2">NO</button>
+</div>
 <script>
 const button2 = document.getElementById('batao2');
-let left = 40;
+let left = 10;
 button2.addEventListener('mouseover', function() {
-  if(left == 40){
+  if(left == 10){
     left = 44;
   }else{
-    left = 40;
+    left = 10;
   }
   this.style.left = left + '%';
 });
